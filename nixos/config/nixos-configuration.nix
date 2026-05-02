@@ -85,7 +85,7 @@
 				"org.gnome.TextEditor"
 				"org.gnome.Showtime"
 				"org.gnome.Builder"
-				"org.gnome.Music"gi
+				"org.gnome.Music"
 				"io.github.flattool.Warehouse"
 				"io.github.nokse22.Exhibit"
 				"com.github.tchx84.Flatseal"
