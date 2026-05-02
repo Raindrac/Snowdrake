@@ -127,7 +127,7 @@
 	fileSystems."/nix/flakes/Snowdrake" = {
 		device = "Snowdrake";
 		fsType = "virtiofs";
-		options = [ "ro" "nofail" ];
+		options = [ "nofail" ];
 	};
 
 	services.spice-vdagentd.enable = true;
