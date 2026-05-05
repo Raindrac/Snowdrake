@@ -7,6 +7,10 @@
 		nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.7.0";
 		home-manager.url = "github:nix-community/home-manager/release-25.11";
 		home-manager.inputs.nixpkgs.follows = "nixpkgs";
+		noctalia = {
+			url = "github:noctalia-dev/noctalia-shell";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 	};
 
 	outputs = { self, nixpkgs, nix-flatpak, home-manager, ... } @ inputs:

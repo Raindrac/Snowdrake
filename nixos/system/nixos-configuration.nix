@@ -138,6 +138,7 @@
 	environment.systemPackages = with pkgs; [
 		#- Core
 		ghostty xwayland-satellite bazaar
+		inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
 
 		#- CLI
 		fastfetch tldr starship git
@@ -160,21 +161,6 @@
 	programs = {
 		fish.enable = true;
 		niri.enable = true;
-		dms-shell = {
-			enable = true;
-			systemd = {
-				enable = true;
-				restartIfChanged = true;
-			};
-			# To-Do: Remove these, see if they're necessary
-			enableSystemMonitoring = true;
-			enableVPN = true;
-			enableDynamicTheming = true;
-			enableAudioWavelength = true;
-			enableCalendarEvents = true;
-			enableClipboardPaste = true;
-		};
-		dsearch.enable = true;
 	};
 
 #----- USER CONFIGURATION
