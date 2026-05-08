@@ -55,14 +55,9 @@
 			pulse.enable = true;
 		};
 
-		greetd = {
+		displayManager.sddm = {
 			enable = true;
-			settings = rec {
-				default_session = {
-					command = "${config.programs.niri.package}/bin/niri-session";
-					user = "Raindrop";
-				};
-			};
+			wayland.enable = true;
 		};
 
 		flatpak = {
